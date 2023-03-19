@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+    <head><title>Web 1-02 Quest(2)</title>
+        <style>
+        #top{
+            position:relative;
+            width:1000px;
+            height:500px;
+            margin-top:30px;
+        }
+
+        .top_left{
+            width:750px;
+            height:500px;
+        }
+        .top_right{
+            position:absolute;
+            width:250px;
+            height:500px;
+            right:0;
+            bottom:0;
+            line-height:13px;
+        }
+
+        #top_box{
+            position:absolute;
+            background-color:rgba(0, 100, 0, 0.8);
+            width:210px;
+            height:210px;
+            left:0px;
+            bottom:0px;
+            padding:0px 15px 40px 25px;
+            line-height:25px;
+        }
+
+        #box_all{
+            width:1000px;
+        }
+
+        #box_all > .box_left{
+            width:750px;
+            height:500px;
+        }
+
+        .box_right{
+            position:absolute;
+            background:yellow;
+            width:210px;
+            height:460px;
+            right:0px;
+            bottom:-500px;
+            padding:0px 20px 40px 20px;
+        }
+
+        .box{
+            width:210px;
+            height:210px;
+            padding:0px 15px 40px 25px;
+            line-height:25px;
+        }
+        .box.a{
+            position:absolute;
+            background:grey;
+            left:0px;
+            bottom:-250px;
+        }
+        .box.b{
+            position:absolute;
+            background:orange;
+            left:250px;
+            bottom:-250px;
+        }
+        .box.c{
+            position:absolute;
+            background:grey;
+            left:500px;
+            bottom:-250px;
+        }
+        .box.d{
+            position:absolute;
+            background:orange;
+            left:0px;
+            bottom:-500px;
+        }
+        .box.e{
+            position:absolute;
+            background:grey;
+            left:250px;
+            bottom:-500px;
+        }
+        .box.f{
+            position:absolute;
+            background:orange;
+            left:500px;
+            bottom:-500px;
+        }
+
+        #footer{
+            position:absolute;
+            background:pink;
+            width:1000px;
+            height:40px;
+            left:0px;
+            bottom:-540px;
+        }
+
+        .f_left{
+            display:flex;
+            position:absolute;
+            background:lightgrey;
+            width:750px;
+            height:40px;
+            left:0px;
+        }
+
+        .f_left > ul > div{
+            text-align:center;
+            font-size:10px;
+            height:16px;
+            margin-left:-15px;
+            padding-right:25px;
+        }
+        .f_left > ul:not(:last-child) > div{
+            border-right:2px solid orange;
+        }
+        </style>
+    </head>
+        <body>
+        <div id="top">
+            <div class="top_left">
+                <img src="chef_about.png">
+            </div>
+            <div class="top_right">
+                <img src="right1.png">
+                <img src="right2.png">
+            </div>
+            <div id="top_box">
+                <h2>GLOBAL<br>BUSINESS</h2>
+                <h5>sdfsdfsdffwfrwfergaegergrgg<br>
+                    dfgegesradsf<br>
+                    safgarwgasdfgasfgsffsdf<br>
+                    sdfafarwfwfsdfwafwee</h5>
+            </div>
+            <div id="box_all">
+        </div>
+        <div id="box_all">
+            <div class="box_left"></div>
+            <div class="box_right">
+                <h5>7</h5>
+            </div>
+            <div class="box">
+                <div class="box a">
+                    <h2>TITLE</h2><br>
+                    <h5>gfgeargagrrergeereasergear<br>
+                    sdfsfregergergerff</h5></div>
+                <div class="box b"><h2>TITLE</h2><br>
+                    <h5>gfgeargagrrergeereasergear<br>
+                    sdfsfregergergerff</h5></div>
+                <div class="box c"><h5>3</h5></div>
+                <div class="box d"><h5>4</h5></div>
+                <div class="box e"><h5>5</h5></div>
+                <div class="box f"><h5>6</h5></div>
+            </div>
+            <div id="footer">
+                <div class="f_left">
+                    <ul><div>법적고지</div></ul>
+                    <ul><div>이메일무단수집거부</div></ul>
+                    <ul><div>이용약관</div></ul>
+                    <ul><div>개인정보취급방침</div></ul>
+                    <ul><div>고객센터</div></ul>
+                    <ul><div>입찰공고</div></ul>
+                </div>
+                <div class="orange_line"></div>
+            </div>
+        </div>    
+        </body>
