@@ -2,126 +2,108 @@
 <html>
     <head><title>Web 1-02 Quest(2)</title>
         <style>
+        *{
+            list-style: none;
+            text-decoration: none;
+            border-collapse: collapse;
+            margin:0px;
+            padding:0px;
+            color:#000;
+        }
         #top{
-            position:relative;
             width:1000px;
             height:500px;
             margin-top:30px;
+            margin-left:250px;
         }
 
         .top_left{
             width:750px;
             height:500px;
+            float:left;
+            
         }
-        .top_right{
-            position:absolute;
+        .top_right {
             width:250px;
             height:500px;
-            right:0;
-            bottom:0;
             line-height:13px;
+            float:left;
         }
 
         #top_box{
-            position:absolute;
-            background-color:rgba(0, 100, 0, 0.8);
+            background-color:rgba(0, 100, 0, 0.6);
             width:210px;
             height:210px;
-            left:0px;
-            bottom:0px;
-            padding:0px 15px 40px 25px;
             line-height:25px;
+            display:inline-block;
+            float:left;
+            margin-top:-250px;
+            padding:15px 25px 25px 15px;
+            
         }
 
         #box_all{
             width:1000px;
+            margin-left:250px;
+            background:skyblue;
+            float:left;
         }
 
-        #box_all > .box_left{
+        .box_left{
             width:750px;
             height:500px;
+            float:left;
+            background:pink;
+            
         }
 
         .box_right{
-            position:absolute;
             background:yellow;
             width:210px;
             height:460px;
-            right:0px;
-            bottom:-500px;
-            padding:0px 20px 40px 20px;
+            padding:15px 20px 25px 20px;
+            float:left;
+            
         }
 
         .box{
             width:210px;
             height:210px;
-            padding:0px 15px 40px 25px;
+            padding:15px 20px 25px 20px;
             line-height:25px;
+            float:left;
         }
-        .box.a{
-            position:absolute;
+        .box:nth-child(2n+1){
             background:grey;
-            left:0px;
-            bottom:-250px;
         }
-        .box.b{
-            position:absolute;
+        .box:nth-child(2n){
             background:orange;
-            left:250px;
-            bottom:-250px;
-        }
-        .box.c{
-            position:absolute;
-            background:grey;
-            left:500px;
-            bottom:-250px;
-        }
-        .box.d{
-            position:absolute;
-            background:orange;
-            left:0px;
-            bottom:-500px;
-        }
-        .box.e{
-            position:absolute;
-            background:grey;
-            left:250px;
-            bottom:-500px;
-        }
-        .box.f{
-            position:absolute;
-            background:orange;
-            left:500px;
-            bottom:-500px;
         }
 
         #footer{
-            position:absolute;
             background:pink;
             width:1000px;
             height:40px;
-            left:0px;
-            bottom:-540px;
+            float:left;
         }
 
         .f_left{
             display:flex;
-            position:absolute;
             background:lightgrey;
             width:750px;
             height:40px;
-            left:0px;
         }
 
         .f_left > ul > div{
-            text-align:center;
-            font-size:10px;
-            height:16px;
-            margin-left:-15px;
-            padding-right:25px;
+            font-size:12px;
+            padding:0px 15px 0px 15px;
         }
         .f_left > ul:not(:last-child) > div{
             border-right:2px solid orange;
+            margin-top:11px;
+        }
+        .f_left > ul:last-child > div{
+            margin-top:10px;
         }
         </style>
     </head>
@@ -136,30 +118,28 @@
             </div>
             <div id="top_box">
                 <h2>GLOBAL<br>BUSINESS</h2>
-                <h5>sdfsdfsdffwfrwfergaegergrgg<br>
+                <h5><br>sdfsdfsdffwfrwfergaegergrgg<br>
                     dfgegesradsf<br>
                     safgarwgasdfgasfgsffsdf<br>
                     sdfafarwfwfsdfwafwee</h5>
             </div>
-            <div id="box_all">
         </div>
         <div id="box_all">
-            <div class="box_left"></div>
-            <div class="box_right">
-                <h5>7</h5>
-            </div>
-            <div class="box">
-                <div class="box a">
+            <div class="box_left">
+                <div class="box">
                     <h2>TITLE</h2><br>
                     <h5>gfgeargagrrergeereasergear<br>
                     sdfsfregergergerff</h5></div>
-                <div class="box b"><h2>TITLE</h2><br>
+                <div class="box"><h2>TITLE</h2><br>
                     <h5>gfgeargagrrergeereasergear<br>
                     sdfsfregergergerff</h5></div>
-                <div class="box c"><h5>3</h5></div>
-                <div class="box d"><h5>4</h5></div>
-                <div class="box e"><h5>5</h5></div>
-                <div class="box f"><h5>6</h5></div>
+                <div class="box"><h5>3</h5></div>
+                <div class="box"><h5>4</h5></div>
+                <div class="box"><h5>5</h5></div>
+                <div class="box"><h5>6</h5></div>
+            </div>
+            <div class="box_right">
+                <h5>7</h5>
             </div>
             <div id="footer">
                 <div class="f_left">
@@ -172,5 +152,5 @@
                 </div>
                 <div class="orange_line"></div>
             </div>
-        </div>    
+        </div>
         </body>
